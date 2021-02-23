@@ -6,8 +6,8 @@ namespace Lesson1
     {
         static void Main(string[] args)
         {
-            //Exersise 1
-            Console.WriteLine("Exersise 1. Press any key");
+            //Exercise 1
+            Console.WriteLine("Exercise 1. Press any key");
             Console.ReadKey();
             Console.WriteLine("Enter x");
             int x = Convert.ToInt32(Console.ReadLine());
@@ -39,8 +39,8 @@ namespace Lesson1
                 Console.ReadKey();
             }
 
-            //Exersise 2
-            Console.WriteLine("Exersise 2. Press any key");
+            //Exercise 2
+            Console.WriteLine("Exercise 2. Press any key");
             Console.ReadKey();
             Console.WriteLine("Enter length");
             int length = Convert.ToInt32(Console.ReadLine());
@@ -61,8 +61,8 @@ namespace Lesson1
                 Console.ReadKey();
             }
 
-            //Exersise 3
-            Console.WriteLine("Exersise 3. Press any key");
+            //Exercise 3
+            Console.WriteLine("Exercise 3. Press any key");
             Console.ReadKey();
             Console.WriteLine("Enter string 1");
             var str1 = Console.ReadLine().ToUpper();
@@ -90,8 +90,8 @@ namespace Lesson1
             }
             Console.ReadKey();
 
-            //Exersise 4
-            Console.WriteLine("Exersise 4. Press any key");
+            //Exercise 4
+            Console.WriteLine("Exercise 4. Press any key");
             Console.ReadKey();
             Console.WriteLine("Enter string 1");
             String string1 = Console.ReadLine();
