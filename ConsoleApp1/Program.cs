@@ -7,6 +7,8 @@ namespace Lesson1
         static void Main(string[] args)
         {
             //Exersise 1
+            Console.WriteLine("Exersise 1. Press any key");
+            Console.ReadKey();
             Console.WriteLine("Enter x");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter y");
@@ -14,17 +16,32 @@ namespace Lesson1
             Console.WriteLine("Enter z");
             int z = Convert.ToInt32(Console.ReadLine());
 
-            var fexpression = (int)((x + y) * (Math.Pow(z, 2) + 1));
-            Console.WriteLine("First expression: " + fexpression);
+            if (y < 0)
+            {
+                Console.WriteLine("!!!y < 0!!! the square root of a negative number does not exist.");
+            }
 
-            var sexpression = ((x % z) - 1) * (Math.Sqrt(y));
-            Console.WriteLine("Second expression: " + (Math.Round(sexpression, 2)));
+            else if(z == 0)
+            {
+                Console.WriteLine("!!!z = 0!!! cannot be divided by 0.");
+            }
 
-            var texpression = ((x + y) * (y + z)) / (Math.Pow(z, 3));
-            Console.WriteLine("Third expression: " + (Math.Round(texpression, 2)));
-            Console.ReadKey();
+            else
+            {
+                var fexpression = (int)((x + y) * (Math.Pow(z, 2) + 1));
+                Console.WriteLine("First expression: " + fexpression);
+
+                var sexpression = ((x % z) - 1) * (Math.Sqrt(y));
+                Console.WriteLine("Second expression: " + (Math.Round(sexpression, 2)));
+
+                var texpression = ((x + y) * (y + z)) / (Math.Pow(z, 3));
+                Console.WriteLine("Third expression: " + (Math.Round(texpression, 2)));
+                Console.ReadKey();
+            }
 
             //Exersise 2
+            Console.WriteLine("Exersise 2. Press any key");
+            Console.ReadKey();
             Console.WriteLine("Enter length");
             int length = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter width");
@@ -32,11 +49,21 @@ namespace Lesson1
             Console.WriteLine("Enter height");
             int height = Convert.ToInt32(Console.ReadLine());
 
-            var diagonal = Math.Sqrt(Math.Pow(length, 2) + Math.Pow(width, 2) + Math.Pow(height, 2));
-            Console.WriteLine("Parallelepiped diagonal length = " + (Math.Round(diagonal, 2)));
-            Console.ReadKey();
+            if(length < 0 ^ width < 0 ^ height < 0)
+            {
+                Console.WriteLine("Incorrect data");
+            }
+
+            else
+            {
+                var diagonal = Math.Sqrt(Math.Pow(length, 2) + Math.Pow(width, 2) + Math.Pow(height, 2));
+                Console.WriteLine("Parallelepiped diagonal length = " + (Math.Round(diagonal, 2)));
+                Console.ReadKey();
+            }
 
             //Exersise 3
+            Console.WriteLine("Exersise 3. Press any key");
+            Console.ReadKey();
             Console.WriteLine("Enter string 1");
             var str1 = Console.ReadLine().ToUpper();
             Console.WriteLine("Enter string 2");
@@ -64,6 +91,8 @@ namespace Lesson1
             Console.ReadKey();
 
             //Exersise 4
+            Console.WriteLine("Exersise 4. Press any key");
+            Console.ReadKey();
             Console.WriteLine("Enter string 1");
             String string1 = Console.ReadLine();
             Console.WriteLine("Enter string 2");
@@ -71,18 +100,19 @@ namespace Lesson1
             Console.WriteLine("Enter symbol");
             char ch = Convert.ToChar(Console.ReadLine());
             String stringresult = string1 + string2;
-            for (int k = (stringresult.Length - 1); k > 0; k --)
+            int index = (stringresult.Length - 1);
+            while (index != 0)
             {
-                if (stringresult[k] == ch)
+                if (stringresult[index] == ch)
                 {
-                    Console.WriteLine("Index of symbol in string: " + k);
+                    Console.WriteLine("Index of symbol in string: " + index);
+                    break;
                 }
                 else
-                {
-                    Console.WriteLine("Symbol doesn't exist in string");
-                }
-                Console.ReadKey();
+                    index--;
             }
+
+            Console.ReadKey();
         }
     }
 }
