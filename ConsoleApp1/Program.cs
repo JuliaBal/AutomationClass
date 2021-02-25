@@ -28,7 +28,7 @@ namespace Lesson1
 
             else
             {
-                var fexpression = (int)((x + y) * (Math.Pow(z, 2) + 1));
+                var fexpression = ((x + y) * (Math.Pow(z, 2) + 1));
                 Console.WriteLine("First expression: " + fexpression);
 
                 var sexpression = ((x % z) - 1) * (Math.Sqrt(y));
@@ -49,7 +49,7 @@ namespace Lesson1
             Console.WriteLine("Enter height");
             int height = Convert.ToInt32(Console.ReadLine());
 
-            if(length < 0 ^ width < 0 ^ height < 0)
+            if(length < 0 || width < 0 || height < 0)
             {
                 Console.WriteLine("Incorrect data");
             }
@@ -73,20 +73,19 @@ namespace Lesson1
 
             if (str1.StartsWith(str2))
             {
-                Console.WriteLine("First string starts from second string: " + str2);
+                Console.WriteLine("String " + str1 + " starts from " + str2 + ": TRUE");
             }
             else
             {
-                Console.WriteLine("First string doesn't start from second string.");
+                Console.WriteLine("String " + str1 + " starts from " + str2 + ": FALSE");
             }
-
             if (str1.EndsWith(str3))
             {
-                Console.WriteLine("First string ends with third string: " + str3);
+                Console.WriteLine("String " + str1 + " ends from " + str3 + ": TRUE");
             }
             else
             {
-                Console.WriteLine("First string doesn't end with third string.");
+                Console.WriteLine("String " + str1 + " ends from " + str3 + ": FALSE");
             }
             Console.ReadKey();
 
@@ -105,7 +104,7 @@ namespace Lesson1
             {
                 if (stringresult[index] == ch)
                 {
-                    Console.WriteLine("Index of symbol in string: " + index);
+                    Console.WriteLine("Index of " + ch + " in " + stringresult + ":" + index);
                     break;
                 }
                 else
