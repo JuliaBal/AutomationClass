@@ -21,6 +21,7 @@ namespace Lesson2_Authentication
                 string password = users.GetValueOrDefault(login);
                 for (int i = 0; i < 3; i++)
                 {
+                    int attempt = 2 - i;
                     Console.WriteLine("Please enter your password");
                     string value = Console.ReadLine();
                     if (value == password)
@@ -31,6 +32,7 @@ namespace Lesson2_Authentication
                     else
                     {
                         Console.WriteLine("Incorrect password. Please enter your password!");
+                        Console.WriteLine("you have " + attempt + " attempts left");
                     }
                 }
             }

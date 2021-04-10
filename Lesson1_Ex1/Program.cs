@@ -8,11 +8,35 @@ namespace Lesson1_Ex1
         {
             Console.WriteLine("Exercise 1.");
             Console.WriteLine("Enter x");
-            int x = Convert.ToInt32(Console.ReadLine());
+            string string_x = Console.ReadLine();
+            bool isInteger = int.TryParse(string_x, out int x);
+            while (isInteger == false)
+            {
+                Console.WriteLine("You enter incorrect value");
+                Console.WriteLine("Please enter integer number");
+                string_x = Console.ReadLine();
+                isInteger = int.TryParse(string_x, out x);
+            }
             Console.WriteLine("Enter y");
-            int y = Convert.ToInt32(Console.ReadLine());
+            string string_y = Console.ReadLine();
+            isInteger = int.TryParse(string_y, out int y);
+            while (isInteger == false)
+            {
+                Console.WriteLine("You enter incorrect value");
+                Console.WriteLine("Please enter integer number");
+                string_y = Console.ReadLine();
+                isInteger = int.TryParse(string_y, out y);
+            }
             Console.WriteLine("Enter z");
-            int z = Convert.ToInt32(Console.ReadLine());
+            string string_z = Console.ReadLine();
+            isInteger = int.TryParse(string_z, out int z);
+            while (isInteger == false)
+            {
+                Console.WriteLine("You enter incorrect value");
+                Console.WriteLine("Please enter integer number");
+                string_z = Console.ReadLine();
+                isInteger = int.TryParse(string_z, out z);
+            }
 
             if (y < 0)
             {
