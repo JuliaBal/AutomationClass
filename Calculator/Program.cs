@@ -1,4 +1,5 @@
 ﻿using System;
+using Convert = Lesson1_Ex1.Convert;
 
 namespace Lesson2_Calculator
 {
@@ -42,28 +43,13 @@ namespace Lesson2_Calculator
             Console.WriteLine("Welcome to Calculator!");
             // Enter number1
             Console.WriteLine("Type first number and press Enter");
-            //int number1 = Convert.ToInt32(Console.ReadLine());
             string number1 = Console.ReadLine();
-            bool isInteger = int.TryParse(number1, out int firstnumber);
-            while(isInteger == false)
-            {
-                Console.WriteLine("You enter incorrect value");
-                Console.WriteLine("Please enter integer number");
-                number1 = Console.ReadLine();
-                isInteger = int.TryParse(number1, out firstnumber);
-            }
+            int firstnumber = Convert.ConvertToIntegerFromString(number1);
 
             // Enter number2
             Console.WriteLine("Type second number and press Enter");
             string number2 = Console.ReadLine();
-            isInteger = int.TryParse(number2, out int secondnumber);
-            while (isInteger == false)
-            {
-                Console.WriteLine("You enter incorrect value");
-                Console.WriteLine("Please enter integer number");
-                number2 = Console.ReadLine();
-                isInteger = int.TryParse(number2, out secondnumber);
-            }
+            int secondnumber = Convert.ConvertToIntegerFromString(number2);
 
             // Enter math option
             Console.WriteLine("Enter math option. + , - , * , / , ^ ");

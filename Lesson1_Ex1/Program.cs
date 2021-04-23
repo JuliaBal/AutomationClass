@@ -2,42 +2,36 @@
 
 namespace Lesson1_Ex1
 {
+    public class Convert
+    {
+        public static int ConvertToIntegerFromString(string string_string)
+        {
+            bool isInteger = int.TryParse(string_string, out int integerValue);
+            while (isInteger == false)
+            {
+                Console.WriteLine("You enter incorrect value");
+                Console.WriteLine("Please enter integer number");
+                string_string = Console.ReadLine();
+                isInteger = int.TryParse(string_string, out integerValue);
+            }
+            return integerValue;
+        }
+    }
+
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Exercise 1.");
             Console.WriteLine("Enter x");
             string string_x = Console.ReadLine();
-            bool isInteger = int.TryParse(string_x, out int x);
-            while (isInteger == false)
-            {
-                Console.WriteLine("You enter incorrect value");
-                Console.WriteLine("Please enter integer number");
-                string_x = Console.ReadLine();
-                isInteger = int.TryParse(string_x, out x);
-            }
+            int x = Convert.ConvertToIntegerFromString(string_x);
             Console.WriteLine("Enter y");
             string string_y = Console.ReadLine();
-            isInteger = int.TryParse(string_y, out int y);
-            while (isInteger == false)
-            {
-                Console.WriteLine("You enter incorrect value");
-                Console.WriteLine("Please enter integer number");
-                string_y = Console.ReadLine();
-                isInteger = int.TryParse(string_y, out y);
-            }
+            int y = Convert.ConvertToIntegerFromString(string_y);
             Console.WriteLine("Enter z");
             string string_z = Console.ReadLine();
-            isInteger = int.TryParse(string_z, out int z);
-            while (isInteger == false)
-            {
-                Console.WriteLine("You enter incorrect value");
-                Console.WriteLine("Please enter integer number");
-                string_z = Console.ReadLine();
-                isInteger = int.TryParse(string_z, out z);
-            }
-
+            int z = Convert.ConvertToIntegerFromString(string_z);
             if (y < 0)
             {
                 Console.WriteLine("!!!y < 0!!! the square root of a negative number does not exist.");
