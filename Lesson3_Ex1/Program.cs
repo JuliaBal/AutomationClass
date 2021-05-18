@@ -25,7 +25,7 @@ namespace Lesson3_Ex1
             {
                 for (j = 0; j < size; j++)
                 {
-                    array[i, j] = random.Next(1, 10);
+                    array[i, j] = random.Next(0, 9);
                     Console.Write(array[i, j] + " ");
                     if (i == j)
                     {
