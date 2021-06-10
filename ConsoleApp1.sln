@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1_Ex4", "ConsoleApp1\Lesson1_Ex4.csproj", "{008322CA-449C-4599-B41A-8CDC59537622}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3_Ex2", "Lesson3_Ex2\Lesson3_Ex2.csproj", "{02C1A89F-A841-477F-B040-D5F400A5B492}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_Calculator", "Calculator\Lesson2_Calculator.csproj", "{52382519-6140-430D-9BAE-F47711545605}"
@@ -17,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson1_Ex3", "Lesson1_Ex3\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2_Authentication", "Lesson2_Authentication\Lesson2_Authentication.csproj", "{2AA1AA8C-F5B9-45A7-B177-9B2ED2968000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3_Matrix", "Lesson3_Matrix\Lesson3_Matrix.csproj", "{1424C140-1426-46EA-8755-9D435B150C23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3_Matrix", "Lesson3_Matrix\Lesson3_Matrix.csproj", "{1424C140-1426-46EA-8755-9D435B150C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1_Ex4", "Lesson1_Ex4\Lesson1_Ex4.csproj", "{215F58F5-A34E-4387-8981-4D706C5E97AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{008322CA-449C-4599-B41A-8CDC59537622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{008322CA-449C-4599-B41A-8CDC59537622}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{008322CA-449C-4599-B41A-8CDC59537622}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{008322CA-449C-4599-B41A-8CDC59537622}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02C1A89F-A841-477F-B040-D5F400A5B492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02C1A89F-A841-477F-B040-D5F400A5B492}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02C1A89F-A841-477F-B040-D5F400A5B492}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +53,10 @@ Global
 		{1424C140-1426-46EA-8755-9D435B150C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1424C140-1426-46EA-8755-9D435B150C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1424C140-1426-46EA-8755-9D435B150C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215F58F5-A34E-4387-8981-4D706C5E97AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215F58F5-A34E-4387-8981-4D706C5E97AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215F58F5-A34E-4387-8981-4D706C5E97AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215F58F5-A34E-4387-8981-4D706C5E97AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
