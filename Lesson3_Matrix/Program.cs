@@ -1,5 +1,5 @@
 ﻿using System;
-using Convert = ;
+using Convert = Lesson1_Ex1.Convert;
 
 namespace Lesson3_Matrix
 {
@@ -10,9 +10,11 @@ namespace Lesson3_Matrix
             Console.WriteLine("Please enter size of matrix: ");
             string strsize = Console.ReadLine();
             int size = Convert.ConvertToIntegerFromString(strsize);
-            if (size < 1)
+            while (size < 1)
             {
                 Console.WriteLine("Please enter integer number >= 1");
+                strsize = Console.ReadLine();
+                size = Convert.ConvertToIntegerFromString(strsize);
             }
             int[,] array = new int[size, size];
             Random random = new Random();
